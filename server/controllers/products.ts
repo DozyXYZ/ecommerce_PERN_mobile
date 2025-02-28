@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 
 export function listProducts(_: Request, res: Response) {
-  res.send('the list of products');
+  console.log('listProducts function called');
+  res.json({ message: 'the list of products' });
 }
